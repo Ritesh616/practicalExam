@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Ragistration form"
+        android:gravity="center"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/label"
+        android:id="@+id/v_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Full Name : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_below="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_toRightOf="@+id/v_name"
+        android:hint="Enter your full name here " />
+
+    <TextView
+        android:id="@+id/v_address"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/v_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Address : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_marginTop="10sp"
+        android:layout_toRightOf="@+id/v_address"
+        android:hint="Enter your address here " />
+
+    <TextView
+        android:id="@+id/v_dob"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/v_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Date of Birth : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_address"
+        android:layout_marginTop="10sp"
+        android:layout_toRightOf="@+id/v_dob"
+        android:hint="dd / mm / yy " />
+
+    <TextView
+        android:id="@+id/v_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_dob"
+        android:layout_marginTop="20dp"
+        android:text="Gender : "
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/v_gender"
+        android:layout_below="@+id/v_dob"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/age"
+        >
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/v_age"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/v_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Age : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_gender"
+        android:layout_alignLeft="@id/address"
+        android:layout_marginTop="10sp"
+        android:layout_toRightOf="@+id/v_dob"
+        android:hint="             "
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/v_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_age"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Student's Mobile no.: "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_age"
+        android:layout_marginTop="10sp"
+        android:layout_toRightOf="@+id/v_number"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/v_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_number"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Department : "
+        android:textSize="20sp" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/v_department"
+        android:layout_below="@+id/v_number"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mechanical" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Civil" />
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/v_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_department"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Student's Email : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_department"
+        android:layout_marginTop="10sp"
+        android:layout_toRightOf="@+id/v_email"
+        android:hint=""
+        android:inputType="textEmailAddress" />
+
+
+
+
+
+
+</RelativeLayout>

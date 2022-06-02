@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:stretchColumns="1">
+    <TableRow
+        android:layout_marginTop="100dp">
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_span="3"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/dateValue"
+            android:layout_marginStart="10dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_span="1"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/dateButton"
+            android:text="Date"
+            android:layout_marginStart="10dp"
+            android:onClick="openDatePicker"/>
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="30dp">
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_span="3"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/timeValue"
+            android:layout_marginStart="10dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_span="1"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/timeButton"
+            android:text="Select TIme"
+            android:layout_marginStart="10dp"
+            android:onClick="openTimePicker" />
+    </TableRow>
+</TableLayout>

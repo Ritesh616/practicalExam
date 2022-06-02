@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program to create a toggle button to display ON / OFF Bluetooth on the display screen."
+        />
+    <TextView
+        android:id="@+id/v"
+        android:text="Toggle Button to On Off Bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+    <ToggleButton
+        android:layout_below="@+id/v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Bluetooth is on"
+        android:textOff="Bluetooth is off"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

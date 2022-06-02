@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program to show five checkboxes and toast selected checkboxes"
+        android:textStyle="bold"
+        android:id="@+id/tv1"/>
+
+    <CheckBox
+        android:id="@+id/java"
+        android:layout_below="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="java"
+        />
+    <CheckBox
+        android:id="@+id/python"
+        android:layout_below="@+id/tv1"
+        android:layout_toRightOf="@+id/java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Python"
+        />
+    <CheckBox
+        android:id="@+id/php"
+        android:layout_below="@+id/tv1"
+        android:layout_toRightOf="@+id/python"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="PHP"
+        />
+    <CheckBox
+        android:id="@+id/android"
+        android:layout_below="@+id/tv1"
+        android:layout_toRightOf="@+id/php"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="android"
+        />
+    <CheckBox
+        android:id="@+id/c"
+        android:layout_below="@+id/tv1"
+        android:layout_toRightOf="@+id/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="C++"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show selected"
+        android:layout_below="@+id/python"
+        />
+</RelativeLayout>

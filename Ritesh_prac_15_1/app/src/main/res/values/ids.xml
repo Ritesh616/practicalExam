@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toastLayoutID" type="id">Message for you:</item>
+    <item name="showToastBtn" type="id" />
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:stretchColumns="0,1">
+
+
+    <TableRow
+        android:id="@+id/row1"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_span="3"
+            android:text="row 1"
+            android:textAlignment="textStart" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row2"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="row 2 Column 1"
+            android:layout_weight="1"
+            android:textAlignment="textStart"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Row 2 column 2"
+            android:layout_weight="1"
+            android:textAlignment="textStart"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="row 2 column 3"
+            android:layout_weight="1"
+            android:textAlignment="textStart"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row3"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_span="3"
+            android:baselineAligned="false"
+            android:text="row 3"
+            android:textAlignment="textStart" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row4"
+        >
+
+        <Button
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:text="row4 column 1"/>
+
+        <Button
+            android:layout_height="90dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="Row 4 column2"
+            android:textAlignment="textStart"/>
+
+
+    </TableRow>
+
+</TableLayout>

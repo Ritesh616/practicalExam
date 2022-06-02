@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/img">
+
+
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:text="Student Info"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/View1"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:hint="Roll No : "
+        android:layout_below="@+id/head"
+        android:textSize="25dp"
+        />
+
+    <EditText
+        android:id="@+id/roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/View1"
+        android:layout_toRightOf="@+id/View1"
+        android:hint="Enter your Roll no"
+        android:textSize="25dp"
+        />
+
+
+    <TextView
+        android:id="@+id/View2"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:hint="Name : "
+        android:layout_below="@+id/View1"
+        android:textSize="25dp"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/View2"
+        android:layout_toRightOf="@+id/View2"
+        android:hint="Enter your Name here"
+        android:layout_alignLeft="@+id/roll"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/View3"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:hint="Class : "
+        android:layout_below="@+id/View2"
+        android:textSize="25dp"
+        />
+
+    <EditText
+        android:id="@+id/cl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/View3"
+        android:layout_toRightOf="@+id/View3"
+        android:hint="Enter your Class here"
+        android:layout_alignLeft="@+id/name"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:id="@+id/View4"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:hint="Div : "
+        android:layout_below="@+id/View3"
+        android:textSize="25dp"
+        />
+
+    <EditText
+        android:id="@+id/div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/View4"
+        android:layout_toRightOf="@+id/View4"
+        android:hint="Enter your Class here"
+        android:layout_alignLeft="@+id/cl"
+        android:textSize="25dp"
+        />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_below="@+id/View4"
+        android:layout_width="match_parent"
+        android:text="Submit and View"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+        android:id="@+id/out1"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b1"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/out2"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/out1"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/out3"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/out2"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/out4"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/out3"
+        android:textSize="25dp"
+        />
+
+
+</RelativeLayout>

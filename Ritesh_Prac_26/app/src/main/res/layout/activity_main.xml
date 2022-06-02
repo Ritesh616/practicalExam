@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--/data/data/com.example.ex26_Ritesh_72/databases/coursedb-->
+    <!--Edit text to enter course name-->
+    <EditText
+        android:id="@+id/idName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter student Name" />
+
+    <!--edit text to enter course duration-->
+    <EditText
+        android:id="@+id/idRoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter student ID(roll)" />
+
+    <!--edit text to display course tracks-->
+    <EditText
+        android:id="@+id/idCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter the course" />
+
+    <!--edit text for course description-->
+    <EditText
+        android:id="@+id/idDivision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Div" />
+
+    <!--button for adding new course-->
+    <Button
+        android:id="@+id/idAddStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Add Student" />
+
+</LinearLayout>

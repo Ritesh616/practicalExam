@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ritesh_prac_15_1</string>
+    <string name="title_text">Hello World,Toast Example</string>
+    <string name="btn_text">SHOW TOAST</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program to create a text field and a button “Navigate”. When you enter “www.google.com” and press navigate button it should open google page."
+        android:textStyle="bold"
+        android:id="@+id/tv1"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter the URL you want to visit"
+        android:layout_below="@+id/tv1"
+        android:id="@+id/url"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/navigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/url"
+        android:text="navigate"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
